@@ -9,7 +9,7 @@ import docsCard from "../../../assets/images/docsCard.png";
 import { FaQuestion } from "react-icons/fa6";
 const VerticalNav = () => {
   return (
-    <div className="w-64 h-[1000px] rounded-xl mt-2 ml-2 bg-gradient-to-r from-[#060B26] to-[#1A1F37] text-white">
+    <div className="w-64 h-[1000px] rounded-xl mt-2 ml-2 bg-gradient-to-r from-[#060B26] to-[#1A1F37] text-white fixed">
       <h1 className="uppercase text-center mt-5">Skibidi Toilet</h1>
       <div className="w-full h-0.5 bg-gradient-to-r from-transparent via-white to-transparent mt-5"></div>
       <div className="flex flex-col justify-between m-5 h-full relative">

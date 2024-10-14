@@ -7,6 +7,10 @@ import { PiNotebookBold } from "react-icons/pi";
 import { FaShoppingCart } from "react-icons/fa";
 import SatisfactionLevelCard from "./SatisfactionLevelCard";
 import ReferralTracking from "./ReferralTracking";
+import LineGraph from "../Charts/LineGraph";
+import ActiveUserInsights from "./ActiveUserInsights";
+import ProjectDetails from "./ProjectDetails";
+import OrderOverview from "./OrderOverview";
 const DashboardDetails = () => {
   const summaryCardsInfo = [
     {
@@ -39,7 +43,7 @@ const DashboardDetails = () => {
     <section
       className="m-7 text-white"
       style={{
-        width: `calc(100% - 350px)`,
+        width: `calc(100% - 250px)`,
       }}
     >
       <DashboardHeader pageName="Dashboard" />
@@ -50,11 +54,16 @@ const DashboardDetails = () => {
       </div>
       <div className="mt-5 flex gap-5 w-full">
         <ProfileCard />
-        <SatisfactionLevelCard percentage={65}/>
-        <ReferralTracking value={9.3}/>
+        <SatisfactionLevelCard percentage={65} />
+        <ReferralTracking value={9.3} />
       </div>
-      <div>
-        
+      <div className="mt-7 flex gap-5">
+        <LineGraph />
+        <ActiveUserInsights />
+      </div>
+      <div className="mt-5 flex gap-5 w-full">
+        <ProjectDetails value={30} />
+        <OrderOverview value={30}/>
       </div>
     </section>
   );

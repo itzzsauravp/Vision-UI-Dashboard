@@ -2,9 +2,11 @@ import VerticalNav from "../components/Dashboard/VerticalNavigationBar/VerticalN
 import DashboardDetails from "../components/Dashboard/DashboardDetailContents/DashboardDetails"
 const DashboardPage = () => {
   return (
-    <section className="h-screen overflow-hidden bg-[#1c244b] flex ">
+    <section className="min-h-screen bg-[#1c244b] flex overflow-hidden">
         <VerticalNav />
+        <div className="ml-64">
         <DashboardDetails />
+        </div>
     </section>
   )
 }

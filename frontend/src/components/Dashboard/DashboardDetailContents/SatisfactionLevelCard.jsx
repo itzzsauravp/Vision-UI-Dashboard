@@ -6,7 +6,7 @@ const SatisfactionLevelCard = ({ percentage }) => {
   const offset = circumference - (percentage / 100) * circumference;
   return (
     <div className="bg-gradient-to-b from-gray-900 to-blue-900 p-6 rounded-2xl w-[500px] h-[400px] text-white">
-      <h3 className="text-lg font-semibold mb-1">Satisfaction Rate</h3>
+      <h3 className="text-2xl font-semibold mb-1">Satisfaction Rate</h3>
       <p className="text-sm text-gray-400 mb-4 font-semibold">From all projects</p>
       <div className="flex flex-col items-center relative h-[300px]">
         <div className="w-60 h-60 flex items-center justify-center mt-5">

@@ -8,7 +8,7 @@ const ReferralTracking = ({ value }) => {
   return (
     <div className="bg-gradient-to-tl from-[#060B28] to-[#1d2653] rounded-xl w-[900px] h-[400px]">
       <div className="flex justify-between items-center m-5">
-        <h1 className="font-bold">Referral Tracking</h1>
+        <h1 className="font-bold text-2xl">Referral Tracking</h1>
         <div className="rounded-xl bg-[#1b2644] h-10 w-10 flex justify-center items-center">
           <div className=" mt-[-18px] text-3xl text-purple-600">...</div>
         </div>
