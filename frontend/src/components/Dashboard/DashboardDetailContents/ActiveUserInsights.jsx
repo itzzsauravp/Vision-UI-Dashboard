@@ -35,13 +35,16 @@ const ActiveUserInsights = () => {
   return (
     <div className="bg-gradient-to-tr from-[#1c213b] to-[#01022b] text-white h-[600px] w-[40%] rounded-xl">
       <div className="p-12 flex flex-col justify-between gap-7 h-full">
-        <div className="h-[50%] w-full">
-          <BarGraph/>
+        <div className="h-[70%] w-full">
+          <BarGraph />
         </div>
         <div className="flex flex-col justify-between h-[300px]">
           <div className="">
-            <h1 className="font-semibold text-2xl">Active Users</h1>
-            <span>+(23)</span> <p>than last week</p>
+            <h1 className="font-semibold text-2xl mt-5">Active Users</h1>
+            <div className="flex gap-2">
+              <span className="text-[#01B574] font-bold">+(23)</span>{" "}
+              <p>than last week</p>
+            </div>
           </div>
           <div className="flex justify-between">
             {miniSummaryCardsInfo.map((item, index) => (

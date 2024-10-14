@@ -61,7 +61,7 @@ const LineGraph = () => {
     <div className="bg-gradient-to-br from-[#0e132b] to-[#22284b] h-[600px] w-[60%] rounded-xl p-2">
       <div className="m-7">
         <h1 className="font-bold text-2xl">Sales overview</h1>
-        <span className="text-[#01B574] font-semibold">(+5) more </span>
+        <span className="text-[#01B574] font-bold">(+5) more </span>
         <span className="text-slate-500">in 2021</span>
       </div>
       <div className="h-[450px] w-[full] ml-7">
