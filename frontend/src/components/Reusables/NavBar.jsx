@@ -2,6 +2,7 @@ import { IoIosCube } from "react-icons/io";
 import { FaUser } from "react-icons/fa";
 import { FaRegUserCircle } from "react-icons/fa";
 import { IoKeySharp } from "react-icons/io5";
+import { Link } from "react-router-dom";
 const NavBar = () => {
   return (
     <nav className="mt-2 flex justify-center items-center gap-48 p-5 uppercase text-white border-2 rounded-xl backdrop-blur-xl cursor-pointer">
@@ -9,7 +10,7 @@ const NavBar = () => {
       <ul className="flex gap-10 ">
         <li className="flex items-center gap-2">
           <IoIosCube />
-          <p>Dashboard</p>
+          <Link to="/dashboard">Dashboard</Link>
         </li>
         <li className="flex items-center gap-2">
           <FaUser />
@@ -17,11 +18,11 @@ const NavBar = () => {
         </li>
         <li className="flex items-center gap-2">
           <FaRegUserCircle />
-          <p>Sign Up</p>
+          <Link to="/">Sign Up</Link>
         </li>
         <li className="flex items-center gap-2">
           <IoKeySharp />
-          <p>Sign In</p>
+          <Link to="/signin">Sign In</Link>
         </li>
       </ul>
       <button className="bg-blue-500 px-10 py-3 rounded-xl">

@@ -2,6 +2,7 @@ import { FaFacebook } from "react-icons/fa";
 import { FaApple } from "react-icons/fa";
 import { FaGoogle } from "react-icons/fa";
 import ToggleSwitch from "../Reusables/ToggleSwitch";
+import { Link } from "react-router-dom";
 const SignUpForm = () => {
   return (
     <div className="text-white w-[500px] flex flex-col items-center">
@@ -68,7 +69,7 @@ const SignUpForm = () => {
           </button>
           <p className="text-center mt-5">
             Already have an account?{" "}
-            <span className="font-bold">Sign in</span>
+            <Link to="/signin" className="font-bold">Sign in</Link>
           </p>
         </div>
       </form>

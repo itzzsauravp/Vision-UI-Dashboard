@@ -7,6 +7,7 @@ import { MdNote } from "react-icons/md";
 import { IoIosRocket } from "react-icons/io";
 import docsCard from "../../../assets/images/docsCard.png";
 import { FaQuestion } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 const VerticalNav = () => {
   return (
     <div className="w-64 h-[1000px] rounded-xl mt-2 ml-2 bg-gradient-to-r from-[#060B26] to-[#1A1F37] text-white fixed">
@@ -40,11 +41,11 @@ const VerticalNav = () => {
             </li>
             <li className="p-2 rounded-lg flex items-center gap-3 hover:bg-[#21263f] duration-[0.2s]">
               <MdNote className="bg-[#1A1F37] h-8 w-8 p-2 rounded-xl" />
-              <p>Sign In</p>
+              <Link to="/">Sign Up</Link>
             </li>
             <li className="p-2 rounded-lg flex items-center gap-3 text-white hover:bg-[#21263f] duration-[0.2s]">
               <IoIosRocket className="bg-[#1A1F37] h-8 w-8 p-2 rounded-xl" />
-              <p>Sign Up</p>
+              <Link to="/signin">Sign In</Link>
             </li>
           </ul>
         </div>
@@ -57,15 +58,19 @@ const VerticalNav = () => {
           }}
         >
           <div className="ml-5 mt-3 mr-5">
-          <div className="h-12 w-12 bg-white flex justify-center items-center rounded-xl">
-            <FaQuestion className="bg-blue-500 h-[60%] w-[60%] p-2 rounded-full" />
-          </div>
-          <h1 className="mt-2 font-bold">Need Help?</h1>
-          <p className="text-slate-400 text-[0.85rem]">Please check our docs</p>
-          <button className="bg-black w-full mt-2 py-2 rounded-xl backdrop-filter backdrop-blur-lg bg-opacity-[60%] border-none text-[0.8rem]">Documentation</button>
+            <div className="h-12 w-12 bg-white flex justify-center items-center rounded-xl">
+              <FaQuestion className="bg-blue-500 h-[60%] w-[60%] p-2 rounded-full" />
+            </div>
+            <h1 className="mt-2 font-bold">Need Help?</h1>
+            <p className="text-slate-400 text-[0.85rem]">
+              Please check our docs
+            </p>
+            <button className="bg-black w-full mt-2 py-2 rounded-xl backdrop-filter backdrop-blur-lg bg-opacity-[60%] border-none text-[0.8rem]">
+              Documentation
+            </button>
           </div>
         </div>
-      </div> 
+      </div>
     </div>
   );
 };
